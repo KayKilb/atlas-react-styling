@@ -3,19 +3,13 @@ import CoverArt from './components/CoverArt';
 import SongTitle from './components/SongTitle';
 import MusicPlayer from './MusicPlayer';
 import Footer from './components/Footer';
-import PlayControls from './components/PlayControls';
+import CurrentlyPlaying from './components/CurrentlyPlaying';
 import PlayListItem from './components/PlayListItem';
-import VolumeControl from './components/VolumeControl';
-import placeholder from './assets/placeholder.svg';
 
 function App() {
   return (
     <div className="h-full flex flex-col justify-between p-8 min-h-screen">
-      <CoverArt coverImage={placeholder} />
-      <SongTitle title="Tidal Drift" author="Echoes of the Sea" />
-      <MusicPlayer />
-      <PlayControls />
-      <VolumeControl />
+      <CurrentlyPlaying />
       <div className="mt-4">
         {/* Sample PlayListItem components */}
         <PlayListItem title="Song Title 1" genre="Pop" length="3:45" />
