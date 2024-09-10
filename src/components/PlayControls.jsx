@@ -1,9 +1,9 @@
 import React from 'react';
-import { PauseIcon, PlayIcon, ForwardIcon, BackwardIcon, ArrowPathRoundedSquareIcon } from '@heroicons/react/24/solid';
+import { PlayIcon, ForwardIcon, BackwardIcon, ArrowPathRoundedSquareIcon } from '@heroicons/react/24/solid';
 
 const PlayControls = () => {
   return (
-    <div className="w-[413px] h-[63px] absolute top-[-706px] left-[-270px] flex items-center justify-between opacity-0">
+    <div className="flex items-center justify-between w-full h-[63px] bg-gray-100 p-4 rounded-lg">
       <button className="text-gray-400 hover:text-gray-700">
         1x
       </button>
