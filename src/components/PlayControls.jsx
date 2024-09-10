@@ -4,7 +4,6 @@ import { PauseIcon, PlayIcon, ForwardIcon, BackwardIcon, ArrowPathRoundedSquareI
 const PlayControls = () => {
   return (
     <div className="w-[413px] h-[63px] absolute top-[-706px] left-[-270px] flex items-center justify-between opacity-0">
-      <img src="/images/play-controls.png" alt="Play Controls" className="w-full h-full object-cover" />
       <button className="text-gray-400 hover:text-gray-700">
         1x
       </button>
