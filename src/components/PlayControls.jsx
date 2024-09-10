@@ -1,23 +1,30 @@
-import React from 'react';
-import { PlayIcon, PauseIcon, BackwardIcon, ForwardIcon, ShuffleIcon } from '@heroicons/react/24/outline'; // Importing icons from Heroicons
+import React, { useState } from 'react';
+import { PauseIcon, PlayIcon, ForwardIcon, BackwardIcon, ArrowPathRoundedSquareIcon } from '@heroicons/react/24/solid';
 
-const PlayControls = () => {
+const PlayControls = ({ onPlayPause, onRewind, onFastForward, onShuffle }) => {
+  const [isPlaying, setIsPlaying] = useState(false);
+
+  const handlePlayPauseClick = () => {
+    setIsPlaying(!isPlaying);
+    onPlayPause();
+  };
+
   return (
     <div className="w-[413px] h-[63px] absolute top-[-706px] left-[-270px] flex items-center justify-between opacity-0">
-      <button className="flex items-center justify-center p-2 hover:bg-gray-200 rounded">
-        <SpeedIcon className="w-6 h-6 text-gray-600" />
+      <button className="text-gray-400 hover:text-gray-700">
+        1x
       </button>
-      <button className="flex items-center justify-center p-2 hover:bg-gray-200 rounded">
-        <BackwardIcon className="w-6 h-6 text-gray-600" />
+      <button onClick={onRewind} className="p-2 rounded-full bg-gray-200 hover:bg-gray-300">
+        <BackwardIcon className="h-5 w-5 text-gray-600" />
       </button>
-      <button className="flex items-center justify-center p-2 hover:bg-gray-200 rounded">
-        <PlayIcon className="w-6 h-6 text-gray-600" />
+      <button onClick={handlePlayPauseClick} className="p-3 rounded-full bg-black hover:bg-gray-800">
+        {isPlaying ? <PauseIcon className="h-6 w-6 text-white" /> : <PlayIcon className="h-6 w-6 text-white" />}
       </button>
-      <button className="flex items-center justify-center p-2 hover:bg-gray-200 rounded">
-        <ForwardIcon className="w-6 h-6 text-gray-600" />
+      <button onClick={onFastForward} className="p-2 rounded-full bg-gray-200 hover:bg-gray-300">
+        <ForwardIcon className="h-5 w-5 text-gray-600" />
       </button>
-      <button className="flex items-center justify-center p-2 hover:bg-gray-200 rounded">
-        <ShuffleIcon className="w-6 h-6 text-gray-600" />
+      <button onClick={onShuffle} className="p-2 rounded-full bg-gray-200 hover:bg-gray-300">
+        <ArrowPathRoundedSquareIcon className="h-5 w-5 text-gray-600" />
       </button>
     </div>
   );
