@@ -1,3 +1,4 @@
 {
-  "plugins": []
+  "plugins": ["prettier-plugins-tailwindcss"],
+  "tailwindConfig": "./tailwind.config.js"
 }
