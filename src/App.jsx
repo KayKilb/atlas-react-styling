@@ -8,7 +8,7 @@ import PlayControls from "./components/PlayControls";
 function App() {
   return (
     <div className="h-full flex flex-col justify-between p-8 min-h-screen">
-      <CoverArt/>
+      <CoverArt />
       <SongTitle />
       <PlayControls />
       <MusicPlayer />
