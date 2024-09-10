@@ -1,13 +1,16 @@
+import React from 'react';
 import SongTitle from "./components/SongTitle";
 import Footer from "./components/Footer";
 import MusicPlayer from "./MusicPlayer";
 import CoverArt from "./components/CoverArt";
+import PlayControls from "./components/PlayControls";
 
 function App() {
   return (
     <div className="h-full flex flex-col justify-between p-8 min-h-screen">
-      <CoverArt/> {/* Render CoverArt component */}
+      <CoverArt/>
       <SongTitle />
+      <PlayControls />
       <MusicPlayer />
       <Footer />
     </div>
