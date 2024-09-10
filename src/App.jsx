@@ -5,6 +5,7 @@ import MusicPlayer from './MusicPlayer';
 import Footer from './components/Footer';
 import PlayControls from './components/PlayControls';
 import PlayListItem from './components/PlayListItem';
+import VolumeControl from './components/VolumeControl';
 import placeholder from './assets/placeholder.svg';
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
       <SongTitle title="Tidal Drift" author="Echoes of the Sea" />
       <MusicPlayer />
       <PlayControls />
+      <VolumeControl />
       <div className="mt-4">
         {/* Sample PlayListItem components */}
         <PlayListItem title="Song Title 1" genre="Pop" length="3:45" />
