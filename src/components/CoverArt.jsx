@@ -3,12 +3,12 @@ import React from 'react';
 const CoverArt = () => {
     return (
         <div
-            className="w-[436px] h-[422px] absolute top-[-1465px] left-[-274px] gap-0 opacity-0"
+            className="w-96 h-96"
         >
             <img
                 src="./assets/placeholder.svg"
                 alt="Cover Art"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover rounded-lg"
             />
         </div>
     );
