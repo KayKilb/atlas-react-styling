@@ -5,11 +5,12 @@ import MusicPlayer from './MusicPlayer';
 import Footer from './components/Footer';
 import PlayControls from './components/PlayControls';
 import PlayListItem from './components/PlayListItem';
+import placeholder from './assets/placeholder.svg';
 
 function App() {
   return (
     <div className="h-full flex flex-col justify-between p-8 min-h-screen">
-      <CoverArt />
+      <CoverArt coverImage={placeholder} />
       <SongTitle title="Tidal Drift" author="Echoes of the Sea" />
       <MusicPlayer />
       <PlayControls />
