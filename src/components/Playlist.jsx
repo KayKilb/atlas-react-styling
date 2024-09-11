@@ -1,7 +1,7 @@
 import React from 'react';
 import PlayListItem from './PlayListItem';
 
-const PlaylistItem = [
+const playlistItems = [
   { title: "Song Title 1", genre: "Pop", length: "3:45" },
   { title: "Song Title 2", genre: "Rock", length: "4:20" },
   { title: "Song Title 3", genre: "Jazz", length: "5:10" },
@@ -16,7 +16,7 @@ const PlaylistItem = [
 
 const Playlist = () => {
   return (
-    <div className="playlist">
+    <div className="playlist w-1/3 ml-auto">
       {playlistItems.map((item, index) => (
         <PlayListItem
           key={index}
