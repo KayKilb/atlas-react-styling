@@ -1,5 +1,5 @@
 import React from 'react';
-import CurrentlyPlaying from './CurrentlyPlaying';
+import CurrentlyPlaying from './components/CurrentlyPlaying';
 import Playlist from './Playlist';
 
 const MusicPlayer = () => {
