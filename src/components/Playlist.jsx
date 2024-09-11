@@ -2,16 +2,16 @@ import React from 'react';
 import PlayListItem from './PlayListItem';
 
 const playlistItems = [
-  { title: "Song Title 1", genre: "Pop", length: "3:45" },
-  { title: "Song Title 2", genre: "Rock", length: "4:20" },
-  { title: "Song Title 3", genre: "Jazz", length: "5:10" },
-  { title: "Song Title 4", genre: "Classical", length: "3:30" },
-  { title: "Song Title 5", genre: "Hip Hop", length: "4:00" },
-  { title: "Song Title 6", genre: "Electronic", length: "3:55" },
-  { title: "Song Title 7", genre: "Reggae", length: "4:15" },
-  { title: "Song Title 8", genre: "Blues", length: "5:05" },
-  { title: "Song Title 9", genre: "Country", length: "4:25" },
-  { title: "Song Title 10", genre: "Indie", length: "3:50" }
+  { title: "Pink Pony Club", genre: "Pop", length: "3:58" },
+  { title: "Casual", genre: "Indie Pop", length: "4:07" },
+  { title: "Naked in Manhattan", genre: "Pop", length: "3:35" },
+  { title: "Red Wine Supernova", genre: "Indie Pop", length: "3:48" },
+  { title: "Love Me Anyway", genre: "Pop", length: "4:10" },
+  { title: "My Kink is Karma", genre: "Pop", length: "3:57" },
+  { title: "Femininomenon", genre: "Pop", length: "2:54" },
+  { title: "Californian", genre: "Indie Pop", length: "3:12" },
+  { title: "Hot To Go!", genre: "Pop", length: "2:45" },
+  { title: "Kaleidoscope", genre: "Pop", length: "3:28" }
 ];
 
 const Playlist = () => {
