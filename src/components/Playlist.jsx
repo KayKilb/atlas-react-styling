@@ -1,7 +1,7 @@
 import React from 'react';
 import PlayListItem from './PlayListItem';
 
-const playlistItem = [
+const PlaylistItem = [
   { title: "Song Title 1", genre: "Pop", length: "3:45" },
   { title: "Song Title 2", genre: "Rock", length: "4:20" },
   { title: "Song Title 3", genre: "Jazz", length: "5:10" },
