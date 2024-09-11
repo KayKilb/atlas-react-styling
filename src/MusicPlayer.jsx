@@ -4,11 +4,8 @@ import Playlist from './components/Playlist';
 
 const MusicPlayer = () => {
   return (
-        <div className="music-player flex flex-col md:flex-row justify-between p-4 gap-8">
-      {/* Currently Playing section */}
+    <div className="music-player flex flex-col md:flex-row justify-between gap-8 p-4 bg-primaryPurple-light">
       <CurrentlyPlaying />
-      
-      {/* Playlist section */}
       <Playlist />
     </div>
   );

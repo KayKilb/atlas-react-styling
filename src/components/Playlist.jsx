@@ -16,7 +16,7 @@ const playlistItems = [
 
 const Playlist = () => {
   return (
-    <div className="playlist w-1/3 ml-auto">
+    <div className="playlist w-[425px] h-[551px] opacity-100 text-primaryPurple-dark">
       {playlistItems.map((item, index) => (
         <PlayListItem
           key={index}
