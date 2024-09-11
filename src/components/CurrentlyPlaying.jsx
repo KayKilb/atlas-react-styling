@@ -9,7 +9,7 @@ export default function CurrentlyPlaying() {
   return (
     <div className="w-[436px] h-[630px] absolute left-0 top-1/2 transform -translate-y-1/2 flex flex-col gap-2 opacity-100">
       <CoverArt coverImage={placeholder} />
-      <SongTitle title="Painted in Blue" artist="Soul Canvas" />
+      <SongTitle title="Pink Pony Club" artist="Chappell Roan" />
       <PlayControls />
       <VolumeControl />
     </div>

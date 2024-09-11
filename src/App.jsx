@@ -1,6 +1,6 @@
 import React from 'react';
-import Footer from './components/Footer';
 import MusicPlayer from './MusicPlayer';
+import Footer from './components/Footer';
 
 function App() {
   return (
