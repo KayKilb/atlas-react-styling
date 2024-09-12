@@ -16,13 +16,14 @@ const playlistItems = [
 
 const Playlist = () => {
   return (
-    <div className="playlist w-[426px] h-[1043px] md:w-[481px] md:h-[662px]">
+    <div className="playlist space-y-2 bg-lightPink text-black">
       {playlistItems.map((item, index) => (
         <PlayListItem
           key={index}
           title={item.title}
           genre={item.genre}
           length={item.length}
+          className="hover:bg-pink"
         />
       ))}
     </div>

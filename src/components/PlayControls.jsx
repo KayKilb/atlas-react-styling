@@ -3,21 +3,21 @@ import { PlayIcon, ForwardIcon, BackwardIcon, ArrowPathRoundedSquareIcon } from 
 
 const PlayControls = () => {
   return (
-    <div className="flex items-center justify-between w-full h-[63px] bg-gray-100 p-4 rounded-lg">
-      <button className="text-gray-400 hover:text-gray-700">
+    <div className="flex items-center justify-between w-full h-[63px] bg-lightPink p-4 rounded-lg">
+      <button className="text-fuchsia hover:text-pink">
         1x
       </button>
-      <button className="p-2 rounded-full bg-gray-200 hover:bg-gray-300">
-        <BackwardIcon className="h-5 w-5 text-gray-600" />
+      <button className="p-2 rounded-full bg-pink hover:bg-lightPink">
+        <BackwardIcon className="h-5 w-5 text-black" />
       </button>
-      <button className="p-3 rounded-full bg-black hover:bg-gray-800">
+      <button className="p-3 rounded-full bg-fuchsia hover:bg-pink">
         <PlayIcon className="h-6 w-6 text-white" />
       </button>
-      <button className="p-2 rounded-full bg-gray-200 hover:bg-gray-300">
-        <ForwardIcon className="h-5 w-5 text-gray-600" />
+      <button className="p-2 rounded-full bg-pink hover:bg-lightPink">
+        <ForwardIcon className="h-5 w-5 text-black" />
       </button>
-      <button className="p-2 rounded-full bg-gray-200 hover:bg-gray-300">
-        <ArrowPathRoundedSquareIcon className="h-5 w-5 text-gray-600" />
+      <button className="p-2 rounded-full bg-pink hover:bg-lightPink">
+        <ArrowPathRoundedSquareIcon className="h-5 w-5 text-black" />
       </button>
     </div>
   );
