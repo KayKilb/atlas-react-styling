@@ -1,5 +1,5 @@
 import React from 'react';
-import { SpeakerWaveIcon } from '@heroicons/react/24/solid'; // Import the volume icon
+import { SpeakerWaveIcon } from '@heroicons/react/24/solid';
 
 const VolumeControl = () => {
   return (
@@ -11,16 +11,16 @@ const VolumeControl = () => {
         min="0"
         max="100"
         defaultValue="50"
-        className="w-full h-2 bg-gray-300 rounded-full appearance-none cursor-pointer"
+        className="w-full h-2 bg-lightPink rounded-full appearance-none cursor-pointer"
         style={{
-          background: 'linear-gradient(to right, #64748b 50%, #e5e7eb 50%)',
+          background: 'linear-gradient(to right, #FF66B2 50%, #FFCCEB 50%)', // Adjust gradient colors
         }}
       />
       <style jsx>{`
         input[type='range']::-webkit-slider-thumb {
           width: 18px;
           height: 18px;
-          background-color: #64748b; /* Same color as the progress bar */
+          background-color: #FF66B2; /* fuchsia */
           border-radius: 50%;
           cursor: pointer;
           -webkit-appearance: none;
@@ -29,7 +29,7 @@ const VolumeControl = () => {
         input[type='range']::-moz-range-thumb {
           width: 18px;
           height: 18px;
-          background-color: #64748b;
+          background-color: #FF66B2;
           border-radius: 50%;
           cursor: pointer;
         }
