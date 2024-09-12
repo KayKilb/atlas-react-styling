@@ -23,7 +23,7 @@ const Playlist = () => {
           title={item.title}
           genre={item.genre}
           length={item.length}
-          className="hover:bg-pink"
+          className="hover:bg-FF66B2"
         />
       ))}
     </div>
